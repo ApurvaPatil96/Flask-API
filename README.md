@@ -1,65 +1,72 @@
-🌐 Fast-API Web Application
-
-📌 Project Overview
-
-This project is a lightweight web application built using Flask, designed to demonstrate modern web development principles. The application integrates dynamic content rendering, modular code structure, and environment-based configuration for sensitive information such as API keys.
-
-🚀 Key Features
-
-Dynamic Web Pages: Serve HTML content using Flask templates.
-
-Environment-based Configuration: Securely manage API keys and other sensitive data via environment variables.
-
-Lightweight & Flexible: Easily extendable for adding APIs, chatbot modules, or additional routes.
-
-Beginner-Friendly Structure: Clean project organization suitable for learning Flask development.
-
-REST API Ready: Can be adapted to serve API endpoints.
-
+🌐 Flask Web Application
+📌 Introduction
+This project is a basic web application built using Flask, a lightweight Python web framework. Flask is used to create web applications quickly and with minimal code.
+🚀 What is Flask?
+Flask is a micro web framework written in Python. It is used to build web applications, REST APIs, and backend services. It is simple, flexible, and beginner-friendly.
 🛠️ Technologies Used
-
-Python 3.x
-
-Flask Web Framework
-
-HTML / CSS for frontend
-
-Optional: JavaScript for interactivity
-
+Python
+Flask
+HTML
+CSS (Optional)
 📂 Project Structure
+Copy code
+
 flask-app/
 │
-├── app.py                # Main application entry point
-├── templates/            # HTML templates
+├── app.py
+├── templates/
 │   └── index.html
-├── static/               # Static files (CSS, JS, images)
+├── static/
 │   └── style.css
-├── temp.py               # API integration and environment config
-├── response.json         # Sample data
-└── README.md             # Project documentation
-⚙️ Installation Guide
+└── README.md
+⚙️ Installation
+Install Python (if not installed).
+Install Flask using pip:
+Copy code
+Bash
+pip install flask
+Check Flask version:
+Copy code
+Bash
+flask --version
+▶️ How to Run the Project
+Open terminal in project folder.
+Run the following command:
+Copy code
+Bash
+python app.py
+Open browser and go to:
+Copy code
 
-Install Python if not already installed.
+http://127.0.0.1:5000/
+🧩 Sample Flask Code
+Copy code
+Python
+from flask import Flask
 
-Install Flask via pip
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Hello, Flask!"
+
+if __name__ == "__main__":
+    app.run(debug=True)
+📖 Features
+Simple routing
+Lightweight framework
+Easy to understand
+Good for beginners
+Can build REST APIs
 🎯 Use Cases
-
-Personal portfolio websites
-
-Learning Flask and Python web development
-
-Backend API prototypes
-
-Chatbot or AI-powered web apps
-
-📚 Resources & Documentation
-
+Personal projects
+Portfolio websites
+Backend APIs
+Small to medium web applications
+📚 Learning Resources
 Official Flask Documentation
-
 Python Official Website
-
-dotenv Python Package
-
-🎓 Presented By
-
-Apurva Patil
+🤝 Contributing
+Feel free to fork this repository and improve the project.
+📄 License
+This project is open-source and free to use.
